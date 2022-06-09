@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(242, 228, 175);
+  text-align: center;
+  margin: 100px 400px 100px 400px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gold;
+}
+.p-quote {
+  font-style: italic;
+}
+
+.p-article-title {
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 30px;
+}
+
+.dt-written {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.back-button {
+  background-color: rgb(242, 228, 175);
+  border: none;
+}

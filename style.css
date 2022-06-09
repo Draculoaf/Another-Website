@@ -1,0 +1,127 @@
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gold;
+  border: 3px solid black;
+}
+body {
+  font-family: sans-serif Helvetica;
+  font-size: 5px;
+  background-size: cover;
+  height: 100%;
+  font-size: larger;
+  background-color: rgb(242, 228, 175);
+  overflow-x: hidden;
+}
+
+.social-links {
+  text-align: left;
+  float: left;
+}
+.social-links img {
+  height: 40px;
+  margin: 1px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+/* The navbar */
+
+.burger-button {
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  line-height: 55px;
+  display: none;
+}
+
+.checkbox {
+  display: none;
+}
+
+#menu-bar:checked ~ ul {
+  left: 0;
+}
+
+@media (max-width: 500px) {
+  .burger-button {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 2.5rem;
+    top: 20px;
+    text-align: center;
+    left: -120%;
+    transition: ease-in-out;
+    z-index: 99;
+  }
+
+  nav ul li {
+    display: block;
+    padding-top: 10px;
+    margin-left: -10px;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .social-links img {
+    display: none;
+  }
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+a.active {
+  background: gold;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.Logo {
+  margin: 0 50px;
+  font-size: 30px;
+  line-height: 50px;
+}
+.u-logo {
+  height: 20px;
+  width: 20px;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
